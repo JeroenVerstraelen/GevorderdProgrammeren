@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LEVEL>
+    <WINDOW x_size="1200" y_size="800">
+        <NAME>
+	    Level 1
+        </NAME>
+        <TEXTURE1>
+	    Resources/Textures/playerTexture1.png
+        </TEXTURE1>
+    </WINDOW>
+    <PLAYER x="600" y="720">
+        <TEXTURE1>
+	    Resources/Textures/playerTexture1.png
+        </TEXTURE1>
+    </PLAYER>
+    <MONSTERLINE>
+	<MONSTER x="150" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="300" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="450" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="600" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="750" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="900" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="1050" y="100">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+    </MONSTERLINE>	
+    <MONSTERLINE>
+	<MONSTER x="150" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="300" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="450" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="600" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="750" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="900" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="1050" y="150">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+    </MONSTERLINE>
+    <MONSTERLINE>
+	<MONSTER x="150" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="300" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="450" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="600" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="750" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="900" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+	<MONSTER x="1050" y="200">
+		<TEXTURE1>
+		    Resources/Textures/monsterTexture1.png
+		</TEXTURE1>
+	</MONSTER>
+    </MONSTERLINE>
+</LEVEL>

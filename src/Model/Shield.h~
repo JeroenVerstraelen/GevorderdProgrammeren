@@ -1,0 +1,5 @@
+class Shield : public Entity{
+
+
+
+};

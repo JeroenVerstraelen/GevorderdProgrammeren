@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
+vector
+-
+utility
+-
+../View/Observer.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
+
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/MonsterLine.cpp
+limits
+-
+list
+-
+algorithm
+-
+stdlib.h
+-
+stdexcept
+-
+MonsterLine.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/MonsterLine.h
+Entity.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
+
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/MonsterLine.h
+vector
+-
+Entity.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
+list
+-
+
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
+SFML/Graphics.hpp
+-
+stdint.h
+-
+map
+-
+
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
+SFML/Graphics.hpp
+-
+LevelWindow.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
+../Model/Entity.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
+

@@ -1,0 +1,24 @@
+#include <SFML/Graphics.hpp>
+#include <map>
+#include <utility>
+
+#include "LevelView.h"
+
+//LevelView::LevelView(sf::RenderWindow* w) : window(w){}
+
+bool LevelWindow::addTexture(std::string file_name){
+	sf::Texture texture;
+	if (!texture.loadFromFile(file_name))
+		return false;
+	textures.insert(std::pair<std::string, sf::Texture>(file_name, texture));
+	return true;
+}
+
+
+std::map<std::string, sf::Texture>& LevelWindow::getTextures(){
+	return textures;
+}
+
+sf::RenderWindow* LevelWindow::getWindow(){
+	return window;
+}

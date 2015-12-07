@@ -1,0 +1,19 @@
+#include <chrono>
+#include <ctime>
+
+StopWatch::Stopwatch(){
+	previous = std::chrono::steady_clock::now();
+};
+
+static StopWatch& StopWatch::getInstance(){
+	static StopWatch instance;
+	return instance;
+}
+
+void StopWatch::reset(){
+	previous = std::chrono::steady_clock::now();
+}
+
+std::chrono::duration<double> StopWatch::getElapsedTime(){
+     	return std::chrono::steady_clock::now() - previous;
+}
