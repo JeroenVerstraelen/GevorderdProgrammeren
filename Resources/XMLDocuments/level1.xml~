@@ -1,127 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LEVEL>
-    <WINDOW x_size="1200" y_size="800">
+    <WINDOW x_size="1200" y_size="800" next_level="XMLDocuments/Level2.xml">
         <NAME>
 	    Level 1
         </NAME>
         <TEXTURE1>
-	    Resources/Textures/playerTexture1.png
+	    Resources/Textures/space_background.jpg
         </TEXTURE1>
     </WINDOW>
-    <PLAYER x="600" y="720">
+    <BULLET texture="Resources/Textures/bullet.png"/>
+    <PLAYER x="600" y="720" collision_radius="32" x_speed="0.5" y_speed="0">
         <TEXTURE1>
 	    Resources/Textures/playerTexture1.png
         </TEXTURE1>
     </PLAYER>
-    <MONSTERLINE>
-	<MONSTER x="150" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="300" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="450" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="600" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="750" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="900" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="1050" y="100">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-    </MONSTERLINE>	
-    <MONSTERLINE>
-	<MONSTER x="150" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="300" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="450" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="600" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="750" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="900" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="1050" y="150">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-    </MONSTERLINE>
-    <MONSTERLINE>
-	<MONSTER x="150" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="300" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="450" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="600" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="750" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="900" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-	<MONSTER x="1050" y="200">
-		<TEXTURE1>
-		    Resources/Textures/monsterTexture1.png
-		</TEXTURE1>
-	</MONSTER>
-    </MONSTERLINE>
+    <MONSTERAI x_speed="50" y_speed="30" x_limit="1150" y_limit="600" initial_direction="RIGHT"/>
+    <MONSTER x="150" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="300" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="450" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="600" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="750" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="900" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="1050" y="100" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="150" y="150" collision_radius="32">
+        <TEXTURE1>
+            Resources/Textures/monsterTexture1.png
+        </TEXTURE1>
+    </MONSTER>
+    <MONSTER x="300" y="150" collision_radius="32">
+        <TEXTURE1>
+            Resources/Textures/monsterTexture1.png
+        </TEXTURE1>
+    </MONSTER>
+    <MONSTER x="450" y="150" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="600" y="150" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="750" y="150" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="900" y="150" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="1050" y="150" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="150" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="300" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="450" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="600" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="750" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="900" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
+    <MONSTER x="1050" y="200" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+    </MONSTER>
 </LEVEL>

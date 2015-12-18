@@ -10,20 +10,43 @@ src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Model/Bullet.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Model/Level.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Model/Monster.h
+src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Model/ParticleGenerator.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Model/Player.h
+src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Utils/RandomGenerator.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/Utils/StopWatch.h
+src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/View/EntityObserver.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o: ../src/View/Observer.h
+
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Controller/MenuController.cpp
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Controller/MenuController.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Controller/parsers/LevelParser.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Controller/parsers/tinyxml/tinystr.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Controller/parsers/tinyxml/tinyxml.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Model/Bullet.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Model/Button.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Model/Entity.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Model/Level.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Model/ParticleGenerator.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Model/Player.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Utils/StopWatch.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/View/EntityObserver.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/View/LevelWindow.h
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/View/Observer.h
 
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Controller/parsers/LevelParser.cpp
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Controller/parsers/LevelParser.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Controller/parsers/tinyxml/tinystr.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Controller/parsers/tinyxml/tinyxml.h
+src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/Bullet.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/Level.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/Monster.h
-src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/MonsterLine.h
+src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/ParticleGenerator.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/Player.h
+src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Model/Shield.h
+src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Utils/StopWatch.h
+src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/View/EntityObserver.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/View/Observer.h
 
@@ -48,6 +71,12 @@ src/CMakeFiles/space.dir/Model/Bullet.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Model/Bullet.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/Model/Bullet.cpp.o: ../src/View/Observer.h
 
+src/CMakeFiles/space.dir/Model/Button.cpp.o: ../src/Model/Button.cpp
+src/CMakeFiles/space.dir/Model/Button.cpp.o: ../src/Model/Button.h
+src/CMakeFiles/space.dir/Model/Button.cpp.o: ../src/Model/Entity.h
+src/CMakeFiles/space.dir/Model/Button.cpp.o: ../src/View/LevelWindow.h
+src/CMakeFiles/space.dir/Model/Button.cpp.o: ../src/View/Observer.h
+
 src/CMakeFiles/space.dir/Model/Entity.cpp.o: ../src/Model/Entity.cpp
 src/CMakeFiles/space.dir/Model/Entity.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Model/Entity.cpp.o: ../src/View/LevelWindow.h
@@ -56,33 +85,55 @@ src/CMakeFiles/space.dir/Model/Entity.cpp.o: ../src/View/Observer.h
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Model/Level.cpp
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Model/Level.h
+src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Model/ParticleGenerator.h
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Model/Player.h
+src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Utils/RandomGenerator.h
+src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Utils/StopWatch.h
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/View/Observer.h
 
+src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/Model/Bullet.h
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/Model/Monster.cpp
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/Model/Monster.h
+src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/Utils/RandomGenerator.h
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/View/Observer.h
 
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: ../src/Model/Entity.h
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: ../src/Model/MonsterLine.cpp
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: ../src/Model/MonsterLine.h
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: ../src/View/LevelWindow.h
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: ../src/View/Observer.h
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/Model/Entity.h
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/Model/ParticleGenerator.cpp
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/Model/ParticleGenerator.h
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/Utils/RandomGenerator.h
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/View/LevelWindow.h
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/View/Observer.h
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/View/ParticleObserver.h
 
+src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/Model/Bullet.h
 src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/Model/Player.cpp
 src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/Model/Player.h
 src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/View/Observer.h
 
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: ../src/Model/Entity.h
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: ../src/Model/Shield.cpp
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: ../src/Model/Shield.h
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: ../src/View/LevelWindow.h
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: ../src/View/Observer.h
+
 src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o: ../src/Utils/RandomGenerator.cpp
 src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o: ../src/Utils/RandomGenerator.h
 
 src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o: ../src/Utils/StopWatch.cpp
 src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o: ../src/Utils/StopWatch.h
+
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/Model/Entity.h
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/Model/ParticleGenerator.h
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/View/EntityObserver.cpp
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/View/EntityObserver.h
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/View/LevelWindow.h
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/View/Observer.h
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/View/ParticleObserver.h
 
 src/CMakeFiles/space.dir/View/LevelWindow.cpp.o: ../src/View/LevelWindow.cpp
 src/CMakeFiles/space.dir/View/LevelWindow.cpp.o: ../src/View/LevelWindow.h
@@ -92,10 +143,24 @@ src/CMakeFiles/space.dir/View/Observer.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/View/Observer.cpp.o: ../src/View/Observer.cpp
 src/CMakeFiles/space.dir/View/Observer.cpp.o: ../src/View/Observer.h
 
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/Model/Entity.h
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/Model/ParticleGenerator.h
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/View/LevelWindow.h
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/View/Observer.h
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/View/ParticleObserver.cpp
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/View/ParticleObserver.h
+
 src/CMakeFiles/space.dir/main.cpp.o: ../src/Controller/LevelController.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Controller/MenuController.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Controller/parsers/LevelParser.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Controller/parsers/tinyxml/tinystr.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Controller/parsers/tinyxml/tinyxml.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Model/Button.h
 src/CMakeFiles/space.dir/main.cpp.o: ../src/Model/Entity.h
 src/CMakeFiles/space.dir/main.cpp.o: ../src/Model/Level.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Model/ParticleGenerator.h
 src/CMakeFiles/space.dir/main.cpp.o: ../src/Model/Player.h
+src/CMakeFiles/space.dir/main.cpp.o: ../src/Utils/StopWatch.h
 src/CMakeFiles/space.dir/main.cpp.o: ../src/View/LevelWindow.h
 src/CMakeFiles/space.dir/main.cpp.o: ../src/View/Observer.h
 src/CMakeFiles/space.dir/main.cpp.o: ../src/main.cpp

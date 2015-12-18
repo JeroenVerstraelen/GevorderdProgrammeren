@@ -95,9 +95,32 @@ src/CMakeFiles/space.dir/Controller/LevelController.cpp.o.provides: src/CMakeFil
 
 src/CMakeFiles/space.dir/Controller/LevelController.cpp.o.provides.build: src/CMakeFiles/space.dir/Controller/LevelController.cpp.o
 
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: src/CMakeFiles/space.dir/flags.make
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o: ../src/Controller/MenuController.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Controller/MenuController.cpp.o"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Controller/MenuController.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.cpp"
+
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/Controller/MenuController.cpp.i"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.cpp" > CMakeFiles/space.dir/Controller/MenuController.cpp.i
+
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/Controller/MenuController.cpp.s"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.cpp" -o CMakeFiles/space.dir/Controller/MenuController.cpp.s
+
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.requires:
+.PHONY : src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.requires
+
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.provides: src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.provides.build
+.PHONY : src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.provides
+
+src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.provides.build: src/CMakeFiles/space.dir/Controller/MenuController.cpp.o
+
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o: ../src/Controller/parsers/LevelParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/LevelParser.cpp"
 
@@ -120,7 +143,7 @@ src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o.provides.build: sr
 
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o: ../src/Controller/parsers/tinyxml/tinyxml.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinyxml.cpp"
 
@@ -143,7 +166,7 @@ src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o.provides.build
 
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o: ../src/Controller/parsers/tinyxml/tinystr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinystr.cpp"
 
@@ -166,7 +189,7 @@ src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o.provides.build
 
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o: ../src/Controller/parsers/tinyxml/tinyxmlerror.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinyxmlerror.cpp"
 
@@ -189,7 +212,7 @@ src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o.provides.
 
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o: ../src/Controller/parsers/tinyxml/tinyxmlparser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinyxmlparser.cpp"
 
@@ -212,7 +235,7 @@ src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o.provides
 
 src/CMakeFiles/space.dir/Model/Entity.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Model/Entity.cpp.o: ../src/Model/Entity.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Entity.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Entity.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.cpp"
 
@@ -233,9 +256,32 @@ src/CMakeFiles/space.dir/Model/Entity.cpp.o.provides: src/CMakeFiles/space.dir/M
 
 src/CMakeFiles/space.dir/Model/Entity.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/Entity.cpp.o
 
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: src/CMakeFiles/space.dir/flags.make
+src/CMakeFiles/space.dir/Model/Shield.cpp.o: ../src/Model/Shield.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Shield.cpp.o"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Shield.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Shield.cpp"
+
+src/CMakeFiles/space.dir/Model/Shield.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/Model/Shield.cpp.i"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Shield.cpp" > CMakeFiles/space.dir/Model/Shield.cpp.i
+
+src/CMakeFiles/space.dir/Model/Shield.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/Model/Shield.cpp.s"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Shield.cpp" -o CMakeFiles/space.dir/Model/Shield.cpp.s
+
+src/CMakeFiles/space.dir/Model/Shield.cpp.o.requires:
+.PHONY : src/CMakeFiles/space.dir/Model/Shield.cpp.o.requires
+
+src/CMakeFiles/space.dir/Model/Shield.cpp.o.provides: src/CMakeFiles/space.dir/Model/Shield.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Shield.cpp.o.provides.build
+.PHONY : src/CMakeFiles/space.dir/Model/Shield.cpp.o.provides
+
+src/CMakeFiles/space.dir/Model/Shield.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/Shield.cpp.o
+
 src/CMakeFiles/space.dir/Model/Bullet.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Model/Bullet.cpp.o: ../src/Model/Bullet.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Bullet.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Bullet.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Bullet.cpp"
 
@@ -258,7 +304,7 @@ src/CMakeFiles/space.dir/Model/Bullet.cpp.o.provides.build: src/CMakeFiles/space
 
 src/CMakeFiles/space.dir/Model/Level.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Model/Level.cpp.o: ../src/Model/Level.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Level.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Level.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.cpp"
 
@@ -281,7 +327,7 @@ src/CMakeFiles/space.dir/Model/Level.cpp.o.provides.build: src/CMakeFiles/space.
 
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Model/Monster.cpp.o: ../src/Model/Monster.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Monster.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Monster.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Monster.cpp"
 
@@ -302,32 +348,9 @@ src/CMakeFiles/space.dir/Model/Monster.cpp.o.provides: src/CMakeFiles/space.dir/
 
 src/CMakeFiles/space.dir/Model/Monster.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/Monster.cpp.o
 
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: src/CMakeFiles/space.dir/flags.make
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o: ../src/Model/MonsterLine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o"
-	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/MonsterLine.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/MonsterLine.cpp"
-
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/Model/MonsterLine.cpp.i"
-	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/MonsterLine.cpp" > CMakeFiles/space.dir/Model/MonsterLine.cpp.i
-
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/Model/MonsterLine.cpp.s"
-	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/MonsterLine.cpp" -o CMakeFiles/space.dir/Model/MonsterLine.cpp.s
-
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.requires:
-.PHONY : src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.requires
-
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.provides: src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.provides.build
-.PHONY : src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.provides
-
-src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o
-
 src/CMakeFiles/space.dir/Model/Player.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Model/Player.cpp.o: ../src/Model/Player.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Player.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Player.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.cpp"
 
@@ -348,9 +371,55 @@ src/CMakeFiles/space.dir/Model/Player.cpp.o.provides: src/CMakeFiles/space.dir/M
 
 src/CMakeFiles/space.dir/Model/Player.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/Player.cpp.o
 
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: src/CMakeFiles/space.dir/flags.make
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o: ../src/Model/ParticleGenerator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.cpp"
+
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/Model/ParticleGenerator.cpp.i"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.cpp" > CMakeFiles/space.dir/Model/ParticleGenerator.cpp.i
+
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/Model/ParticleGenerator.cpp.s"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.cpp" -o CMakeFiles/space.dir/Model/ParticleGenerator.cpp.s
+
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.requires:
+.PHONY : src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.requires
+
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.provides: src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.provides.build
+.PHONY : src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.provides
+
+src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o
+
+src/CMakeFiles/space.dir/Model/Button.cpp.o: src/CMakeFiles/space.dir/flags.make
+src/CMakeFiles/space.dir/Model/Button.cpp.o: ../src/Model/Button.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Model/Button.cpp.o"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Model/Button.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Button.cpp"
+
+src/CMakeFiles/space.dir/Model/Button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/Model/Button.cpp.i"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Button.cpp" > CMakeFiles/space.dir/Model/Button.cpp.i
+
+src/CMakeFiles/space.dir/Model/Button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/Model/Button.cpp.s"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Button.cpp" -o CMakeFiles/space.dir/Model/Button.cpp.s
+
+src/CMakeFiles/space.dir/Model/Button.cpp.o.requires:
+.PHONY : src/CMakeFiles/space.dir/Model/Button.cpp.o.requires
+
+src/CMakeFiles/space.dir/Model/Button.cpp.o.provides: src/CMakeFiles/space.dir/Model/Button.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Button.cpp.o.provides.build
+.PHONY : src/CMakeFiles/space.dir/Model/Button.cpp.o.provides
+
+src/CMakeFiles/space.dir/Model/Button.cpp.o.provides.build: src/CMakeFiles/space.dir/Model/Button.cpp.o
+
 src/CMakeFiles/space.dir/View/LevelWindow.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/View/LevelWindow.cpp.o: ../src/View/LevelWindow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/View/LevelWindow.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/View/LevelWindow.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.cpp"
 
@@ -373,7 +442,7 @@ src/CMakeFiles/space.dir/View/LevelWindow.cpp.o.provides.build: src/CMakeFiles/s
 
 src/CMakeFiles/space.dir/View/Observer.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/View/Observer.cpp.o: ../src/View/Observer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/View/Observer.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/View/Observer.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.cpp"
 
@@ -394,9 +463,55 @@ src/CMakeFiles/space.dir/View/Observer.cpp.o.provides: src/CMakeFiles/space.dir/
 
 src/CMakeFiles/space.dir/View/Observer.cpp.o.provides.build: src/CMakeFiles/space.dir/View/Observer.cpp.o
 
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: src/CMakeFiles/space.dir/flags.make
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o: ../src/View/EntityObserver.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/View/EntityObserver.cpp.o"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/View/EntityObserver.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.cpp"
+
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/View/EntityObserver.cpp.i"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.cpp" > CMakeFiles/space.dir/View/EntityObserver.cpp.i
+
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/View/EntityObserver.cpp.s"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.cpp" -o CMakeFiles/space.dir/View/EntityObserver.cpp.s
+
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.requires:
+.PHONY : src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.requires
+
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.provides: src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.provides.build
+.PHONY : src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.provides
+
+src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.provides.build: src/CMakeFiles/space.dir/View/EntityObserver.cpp.o
+
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: src/CMakeFiles/space.dir/flags.make
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o: ../src/View/ParticleObserver.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/View/ParticleObserver.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.cpp"
+
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space.dir/View/ParticleObserver.cpp.i"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.cpp" > CMakeFiles/space.dir/View/ParticleObserver.cpp.i
+
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space.dir/View/ParticleObserver.cpp.s"
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.cpp" -o CMakeFiles/space.dir/View/ParticleObserver.cpp.s
+
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.requires:
+.PHONY : src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.requires
+
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.provides: src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.provides.build
+.PHONY : src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.provides
+
+src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.provides.build: src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o
+
 src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o: ../src/Utils/StopWatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Utils/StopWatch.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.cpp"
 
@@ -419,7 +534,7 @@ src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o.provides.build: src/CMakeFiles/sp
 
 src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o: src/CMakeFiles/space.dir/flags.make
 src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o: ../src/Utils/RandomGenerator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/CMakeFiles" $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o"
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o -c "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/RandomGenerator.cpp"
 
@@ -444,19 +559,24 @@ src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o.provides.build: src/CMakeFi
 space_OBJECTS = \
 "CMakeFiles/space.dir/main.cpp.o" \
 "CMakeFiles/space.dir/Controller/LevelController.cpp.o" \
+"CMakeFiles/space.dir/Controller/MenuController.cpp.o" \
 "CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o" \
 "CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o" \
 "CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o" \
 "CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o" \
 "CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o" \
 "CMakeFiles/space.dir/Model/Entity.cpp.o" \
+"CMakeFiles/space.dir/Model/Shield.cpp.o" \
 "CMakeFiles/space.dir/Model/Bullet.cpp.o" \
 "CMakeFiles/space.dir/Model/Level.cpp.o" \
 "CMakeFiles/space.dir/Model/Monster.cpp.o" \
-"CMakeFiles/space.dir/Model/MonsterLine.cpp.o" \
 "CMakeFiles/space.dir/Model/Player.cpp.o" \
+"CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o" \
+"CMakeFiles/space.dir/Model/Button.cpp.o" \
 "CMakeFiles/space.dir/View/LevelWindow.cpp.o" \
 "CMakeFiles/space.dir/View/Observer.cpp.o" \
+"CMakeFiles/space.dir/View/EntityObserver.cpp.o" \
+"CMakeFiles/space.dir/View/ParticleObserver.cpp.o" \
 "CMakeFiles/space.dir/Utils/StopWatch.cpp.o" \
 "CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o"
 
@@ -465,19 +585,24 @@ space_EXTERNAL_OBJECTS =
 
 src/space: src/CMakeFiles/space.dir/main.cpp.o
 src/space: src/CMakeFiles/space.dir/Controller/LevelController.cpp.o
+src/space: src/CMakeFiles/space.dir/Controller/MenuController.cpp.o
 src/space: src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o
 src/space: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o
 src/space: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o
 src/space: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o
 src/space: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o
 src/space: src/CMakeFiles/space.dir/Model/Entity.cpp.o
+src/space: src/CMakeFiles/space.dir/Model/Shield.cpp.o
 src/space: src/CMakeFiles/space.dir/Model/Bullet.cpp.o
 src/space: src/CMakeFiles/space.dir/Model/Level.cpp.o
 src/space: src/CMakeFiles/space.dir/Model/Monster.cpp.o
-src/space: src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o
 src/space: src/CMakeFiles/space.dir/Model/Player.cpp.o
+src/space: src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o
+src/space: src/CMakeFiles/space.dir/Model/Button.cpp.o
 src/space: src/CMakeFiles/space.dir/View/LevelWindow.cpp.o
 src/space: src/CMakeFiles/space.dir/View/Observer.cpp.o
+src/space: src/CMakeFiles/space.dir/View/EntityObserver.cpp.o
+src/space: src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o
 src/space: src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o
 src/space: src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o
 src/space: src/CMakeFiles/space.dir/build.make
@@ -494,19 +619,24 @@ src/CMakeFiles/space.dir/build: src/space
 
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/main.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/LevelController.cpp.o.requires
+src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/MenuController.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/parsers/LevelParser.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxml.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinystr.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlerror.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Controller/parsers/tinyxml/tinyxmlparser.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Entity.cpp.o.requires
+src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Shield.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Bullet.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Level.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Monster.cpp.o.requires
-src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Player.cpp.o.requires
+src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o.requires
+src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Model/Button.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/View/LevelWindow.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/View/Observer.cpp.o.requires
+src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/View/EntityObserver.cpp.o.requires
+src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Utils/StopWatch.cpp.o.requires
 src/CMakeFiles/space.dir/requires: src/CMakeFiles/space.dir/Utils/RandomGenerator.cpp.o.requires
 .PHONY : src/CMakeFiles/space.dir/requires

@@ -1,0 +1,49 @@
+#include <map>
+#include <iostream>
+
+using namespace std;
+
+class Texture{
+
+	public:
+		Texture(){
+			cout << "Texture constructor called" << endl;
+		}
+
+		Texture(const Texture& texture){
+			cout << "Texture copy constructor called" << endl;
+		}
+};
+
+class A{
+	std::map<std::string, Texture> textures;
+	public:
+		void addTexture(std::string file_name, Texture& texture){
+			textures.insert(std::pair<std::string, Texture>(file_name, texture));
+		}	
+
+		std::map<std::string, Texture> getTextures(){return textures;}
+};
+
+
+
+int main(){
+	Texture t1;
+	Texture t2;
+
+	A a;
+	a.addTexture("test1", t1);
+	a.addTexture("test2", t2);
+	cout << "end of addTextures" << endl;
+
+	a.getTextures(); //Should print nothing
+
+	// Constructor
+	// Constructor
+	// Copy Constructor
+	// Copy Constructor
+	// NOTHING!
+
+
+	return 0;
+}

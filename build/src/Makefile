@@ -177,6 +177,30 @@ Controller/LevelController.cpp.s:
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Controller/LevelController.cpp.s
 .PHONY : Controller/LevelController.cpp.s
 
+Controller/MenuController.o: Controller/MenuController.cpp.o
+.PHONY : Controller/MenuController.o
+
+# target to build an object file
+Controller/MenuController.cpp.o:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Controller/MenuController.cpp.o
+.PHONY : Controller/MenuController.cpp.o
+
+Controller/MenuController.i: Controller/MenuController.cpp.i
+.PHONY : Controller/MenuController.i
+
+# target to preprocess a source file
+Controller/MenuController.cpp.i:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Controller/MenuController.cpp.i
+.PHONY : Controller/MenuController.cpp.i
+
+Controller/MenuController.s: Controller/MenuController.cpp.s
+.PHONY : Controller/MenuController.s
+
+# target to generate assembly for a file
+Controller/MenuController.cpp.s:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Controller/MenuController.cpp.s
+.PHONY : Controller/MenuController.cpp.s
+
 Controller/parsers/LevelParser.o: Controller/parsers/LevelParser.cpp.o
 .PHONY : Controller/parsers/LevelParser.o
 
@@ -321,6 +345,30 @@ Model/Bullet.cpp.s:
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Bullet.cpp.s
 .PHONY : Model/Bullet.cpp.s
 
+Model/Button.o: Model/Button.cpp.o
+.PHONY : Model/Button.o
+
+# target to build an object file
+Model/Button.cpp.o:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Button.cpp.o
+.PHONY : Model/Button.cpp.o
+
+Model/Button.i: Model/Button.cpp.i
+.PHONY : Model/Button.i
+
+# target to preprocess a source file
+Model/Button.cpp.i:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Button.cpp.i
+.PHONY : Model/Button.cpp.i
+
+Model/Button.s: Model/Button.cpp.s
+.PHONY : Model/Button.s
+
+# target to generate assembly for a file
+Model/Button.cpp.s:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Button.cpp.s
+.PHONY : Model/Button.cpp.s
+
 Model/Entity.o: Model/Entity.cpp.o
 .PHONY : Model/Entity.o
 
@@ -393,29 +441,29 @@ Model/Monster.cpp.s:
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Monster.cpp.s
 .PHONY : Model/Monster.cpp.s
 
-Model/MonsterLine.o: Model/MonsterLine.cpp.o
-.PHONY : Model/MonsterLine.o
+Model/ParticleGenerator.o: Model/ParticleGenerator.cpp.o
+.PHONY : Model/ParticleGenerator.o
 
 # target to build an object file
-Model/MonsterLine.cpp.o:
-	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/MonsterLine.cpp.o
-.PHONY : Model/MonsterLine.cpp.o
+Model/ParticleGenerator.cpp.o:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.o
+.PHONY : Model/ParticleGenerator.cpp.o
 
-Model/MonsterLine.i: Model/MonsterLine.cpp.i
-.PHONY : Model/MonsterLine.i
+Model/ParticleGenerator.i: Model/ParticleGenerator.cpp.i
+.PHONY : Model/ParticleGenerator.i
 
 # target to preprocess a source file
-Model/MonsterLine.cpp.i:
-	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/MonsterLine.cpp.i
-.PHONY : Model/MonsterLine.cpp.i
+Model/ParticleGenerator.cpp.i:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.i
+.PHONY : Model/ParticleGenerator.cpp.i
 
-Model/MonsterLine.s: Model/MonsterLine.cpp.s
-.PHONY : Model/MonsterLine.s
+Model/ParticleGenerator.s: Model/ParticleGenerator.cpp.s
+.PHONY : Model/ParticleGenerator.s
 
 # target to generate assembly for a file
-Model/MonsterLine.cpp.s:
-	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/MonsterLine.cpp.s
-.PHONY : Model/MonsterLine.cpp.s
+Model/ParticleGenerator.cpp.s:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/ParticleGenerator.cpp.s
+.PHONY : Model/ParticleGenerator.cpp.s
 
 Model/Player.o: Model/Player.cpp.o
 .PHONY : Model/Player.o
@@ -440,6 +488,30 @@ Model/Player.s: Model/Player.cpp.s
 Model/Player.cpp.s:
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Player.cpp.s
 .PHONY : Model/Player.cpp.s
+
+Model/Shield.o: Model/Shield.cpp.o
+.PHONY : Model/Shield.o
+
+# target to build an object file
+Model/Shield.cpp.o:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Shield.cpp.o
+.PHONY : Model/Shield.cpp.o
+
+Model/Shield.i: Model/Shield.cpp.i
+.PHONY : Model/Shield.i
+
+# target to preprocess a source file
+Model/Shield.cpp.i:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Shield.cpp.i
+.PHONY : Model/Shield.cpp.i
+
+Model/Shield.s: Model/Shield.cpp.s
+.PHONY : Model/Shield.s
+
+# target to generate assembly for a file
+Model/Shield.cpp.s:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Model/Shield.cpp.s
+.PHONY : Model/Shield.cpp.s
 
 Utils/RandomGenerator.o: Utils/RandomGenerator.cpp.o
 .PHONY : Utils/RandomGenerator.o
@@ -489,6 +561,30 @@ Utils/StopWatch.cpp.s:
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/Utils/StopWatch.cpp.s
 .PHONY : Utils/StopWatch.cpp.s
 
+View/EntityObserver.o: View/EntityObserver.cpp.o
+.PHONY : View/EntityObserver.o
+
+# target to build an object file
+View/EntityObserver.cpp.o:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/EntityObserver.cpp.o
+.PHONY : View/EntityObserver.cpp.o
+
+View/EntityObserver.i: View/EntityObserver.cpp.i
+.PHONY : View/EntityObserver.i
+
+# target to preprocess a source file
+View/EntityObserver.cpp.i:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/EntityObserver.cpp.i
+.PHONY : View/EntityObserver.cpp.i
+
+View/EntityObserver.s: View/EntityObserver.cpp.s
+.PHONY : View/EntityObserver.s
+
+# target to generate assembly for a file
+View/EntityObserver.cpp.s:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/EntityObserver.cpp.s
+.PHONY : View/EntityObserver.cpp.s
+
 View/LevelWindow.o: View/LevelWindow.cpp.o
 .PHONY : View/LevelWindow.o
 
@@ -537,6 +633,30 @@ View/Observer.cpp.s:
 	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/Observer.cpp.s
 .PHONY : View/Observer.cpp.s
 
+View/ParticleObserver.o: View/ParticleObserver.cpp.o
+.PHONY : View/ParticleObserver.o
+
+# target to build an object file
+View/ParticleObserver.cpp.o:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/ParticleObserver.cpp.o
+.PHONY : View/ParticleObserver.cpp.o
+
+View/ParticleObserver.i: View/ParticleObserver.cpp.i
+.PHONY : View/ParticleObserver.i
+
+# target to preprocess a source file
+View/ParticleObserver.cpp.i:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/ParticleObserver.cpp.i
+.PHONY : View/ParticleObserver.cpp.i
+
+View/ParticleObserver.s: View/ParticleObserver.cpp.s
+.PHONY : View/ParticleObserver.s
+
+# target to generate assembly for a file
+View/ParticleObserver.cpp.s:
+	cd "/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/build" && $(MAKE) -f src/CMakeFiles/space.dir/build.make src/CMakeFiles/space.dir/View/ParticleObserver.cpp.s
+.PHONY : View/ParticleObserver.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -577,6 +697,9 @@ help:
 	@echo "... Controller/LevelController.o"
 	@echo "... Controller/LevelController.i"
 	@echo "... Controller/LevelController.s"
+	@echo "... Controller/MenuController.o"
+	@echo "... Controller/MenuController.i"
+	@echo "... Controller/MenuController.s"
 	@echo "... Controller/parsers/LevelParser.o"
 	@echo "... Controller/parsers/LevelParser.i"
 	@echo "... Controller/parsers/LevelParser.s"
@@ -595,6 +718,9 @@ help:
 	@echo "... Model/Bullet.o"
 	@echo "... Model/Bullet.i"
 	@echo "... Model/Bullet.s"
+	@echo "... Model/Button.o"
+	@echo "... Model/Button.i"
+	@echo "... Model/Button.s"
 	@echo "... Model/Entity.o"
 	@echo "... Model/Entity.i"
 	@echo "... Model/Entity.s"
@@ -604,24 +730,33 @@ help:
 	@echo "... Model/Monster.o"
 	@echo "... Model/Monster.i"
 	@echo "... Model/Monster.s"
-	@echo "... Model/MonsterLine.o"
-	@echo "... Model/MonsterLine.i"
-	@echo "... Model/MonsterLine.s"
+	@echo "... Model/ParticleGenerator.o"
+	@echo "... Model/ParticleGenerator.i"
+	@echo "... Model/ParticleGenerator.s"
 	@echo "... Model/Player.o"
 	@echo "... Model/Player.i"
 	@echo "... Model/Player.s"
+	@echo "... Model/Shield.o"
+	@echo "... Model/Shield.i"
+	@echo "... Model/Shield.s"
 	@echo "... Utils/RandomGenerator.o"
 	@echo "... Utils/RandomGenerator.i"
 	@echo "... Utils/RandomGenerator.s"
 	@echo "... Utils/StopWatch.o"
 	@echo "... Utils/StopWatch.i"
 	@echo "... Utils/StopWatch.s"
+	@echo "... View/EntityObserver.o"
+	@echo "... View/EntityObserver.i"
+	@echo "... View/EntityObserver.s"
 	@echo "... View/LevelWindow.o"
 	@echo "... View/LevelWindow.i"
 	@echo "... View/LevelWindow.s"
 	@echo "... View/Observer.o"
 	@echo "... View/Observer.i"
 	@echo "... View/Observer.s"
+	@echo "... View/ParticleObserver.o"
+	@echo "... View/ParticleObserver.i"
+	@echo "... View/ParticleObserver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
