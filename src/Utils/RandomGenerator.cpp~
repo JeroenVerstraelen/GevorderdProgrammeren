@@ -1,14 +1,22 @@
-#include <stdlib.h>
-#include <time.h>  
 #include "RandomGenerator.h"
 
-RandomGenerator& RandomGenerator::getInstance(){
-	static RandomGenerator instance;
-	return instance;
-}
+namespace si {
+
+	RandomGenerator* RandomGenerator::_instance = nullptr;
+
+	RandomGenerator* RandomGenerator::getInstance(){
+		if(_instance == NULL){
+			static RandomGenerator instance;
+			_instance = &instance;
+		}
+
+	 	return _instance;
+	}
 
 
-int RandomGenerator::getRandomInt(int min, int max){
-  srand (time(NULL));
-  return rand() % max + min;
+	int RandomGenerator::getRandomInt(int min, int max){
+		std::uniform_real_distribution<double> dist(min, max);
+		return dist(mt);
+	}
+
 }

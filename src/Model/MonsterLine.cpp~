@@ -3,14 +3,19 @@
 #include <algorithm>
 #include <stdlib.h> 
 #include <stdexcept>
-#include "MonsterLine.h"
 #include "Entity.h"
+#include "MonsterLine.h"
+#include "Bullet.h"
+#include "../Utils/RandomGenerator.h"
+#include "../View/ParticleObserver.h"
 
-MonsterLine::MonsterLine(Direction direction, double x_speed, double y_speed, double x_bound, std::list<Entity*> monsters) : _direction(direction), 
-			_monsters(monsters)
+MonsterLine::MonsterLine(Direction direction, double x_speed, double y_speed, double x_bound, double x_buffer, std::vector<Entity*> monsters) : _direction(direction), _monsters(monsters)
 {
 	_x_speed = x_speed;
 	_y_speed = y_speed;
+	_x_buffer = x_buffer;
+
+	// Calculate the size of the line.
 	double max_x = 0;
 	double min_x = std::numeric_limits<double>::infinity();
 	for(auto &monster : _monsters) {
@@ -21,16 +26,11 @@ MonsterLine::MonsterLine(Direction direction, double x_speed, double y_speed, do
 			min_x = monster->getLocation().first;
 		}
 	}
-
-	// Calculate the size of the line.
 	_line_size = max_x - min_x;
 	
-	// Calculate current x value.
-	if(direction == RIGHT) {
-		_total_x = max_x;
-		return;
-	} 
-	_total_x = min_x + x_bound;
+	// Calculate the location of the line.
+	_x = max_x;	
+	_y = _monsters.front()->getLocation().second;
 }
 
 MonsterLine::~MonsterLine(){
@@ -38,8 +38,10 @@ MonsterLine::~MonsterLine(){
 		delete monster;
 }
 
+void MonsterLine::addMonster(Entity* monster) {
+	_monsters.push_back(monster);
 
-void MonsterLine::recalculateLineSize(){
+	// Recalculate the size of the line.
 	double max_x = 0;
 	double min_x = std::numeric_limits<double>::infinity();
 	for(auto &monster : _monsters) {
@@ -50,23 +52,35 @@ void MonsterLine::recalculateLineSize(){
 			min_x = monster->getLocation().first;
 		}
 	}
-
-	// Calculate the size of the line.
 	_line_size = max_x - min_x;
-}
-
-void MonsterLine::addMonster(Entity* monster) {
-	_monsters.push_back(monster);
-	recalculateLineSize();
+	_x = max_x;
 }
 
 bool MonsterLine::deleteMonster(Entity* entity) {
-	std::list<Entity*>::iterator it = std::find(_monsters.begin(), _monsters.end(), entity);
-	if(it != _monsters.end()){
+	std::vector<Entity*>::iterator it = std::find(_monsters.begin(), _monsters.end(), entity);
+	if(it != _monsters.end()) {
+		ParticleObserver* p_obs = new ParticleObserver(entity->getObservers().front(), 10000);
+		std::vector<ParticleObserver*> particle_observers = {p_obs};
+		ParticleGenerator* p_gen = new ParticleGenerator(particle_observers, 10000, EXPLOSION);
+		p_gen->setEmitter(entity->getLocation().first, entity->getLocation().second);
+		_particle_generators.push_back(p_gen);
 		_monsters.erase(it);
 		delete entity;
-		recalculateLineSize();
 	}
+	// Line_size will remain the same after deletion.
+	// Recalculate the size of the line.
+	double max_x = 0;
+	double min_x = std::numeric_limits<double>::infinity();
+	for(auto &monster : _monsters) {
+		if(monster->getLocation().first > max_x) {
+			max_x = monster->getLocation().first;
+		}
+		if(monster->getLocation().first < min_x) {
+			min_x = monster->getLocation().first;
+		}
+	}
+	_line_size = max_x - min_x;
+	_x = max_x;
 
 	return _monsters.empty();
 }
@@ -75,53 +89,53 @@ std::string MonsterLine::getType(){
 	return "MonsterLine";
 }
 
-bool MonsterLine::move(double elapsed_time, double x_bound, double y_bound) {
-	if(_line_size > x_bound)
-		throw std::runtime_error("Monster line is larger than bounds.");
-
-	// The amount to move each monster on the x-axis.
-	double x_delta = (_x_speed * elapsed_time);
-
-	// Calculate location on screen.
-	int current_multiple = (_total_x / x_bound); 
-	_total_x += x_delta;
-	int next_multiple = (_total_x / x_bound);
-
-	// Temp gets the first say in if we move left or right.
-	double temp = 0;
-	if(next_multiple % 2 == 1){
-		temp = x_bound - _line_size;
-		x_delta = -x_delta;
-	}
-	// New_x is the actual location of the leftmost or rightmost
-	// entity depending on the direction we're moving.
-	double new_x = abs(temp - (_total_x - (next_multiple * x_bound)));
-
-	// If the leftmost entity goes beyond the bounds, move to the right.
-	if(new_x < 0)
-		x_delta = -x_delta;
-		
-
-	// If we go past the screen, move down.
-	if(current_multiple != next_multiple or new_x < 0){
-		for(auto &monster : _monsters)
-			monster->move(0, _y_speed, x_bound, y_bound);
-		if(_monsters.front()->getLocation().second >= y_bound){
-			// Level has ended.
-			return true;	
+bool MonsterLine::move(double elapsed_time, double x_bound, double y_bound, Direction direction) {
+	double x_delta = _x_speed;
+	double y_delta = 0;
+	if(_direction == RIGHT) {
+		x_delta = _x_speed;
+		if(_x + x_delta > x_bound - _x_buffer){
+			x_delta = 0;
+			y_delta = _y_speed;
+			_direction = LEFT;
 		}
 	}
+	else if (_direction == LEFT) {
+		x_delta = -_x_speed;
+		if((_x + x_delta) - _line_size <= 0) {
+			x_delta = 0;
+			y_delta = _y_speed;
+			_direction = RIGHT;
+		}
+	}
+	_x += x_delta;
+	_y += y_delta;
 
 	// Move all the entities.
 	for(auto &monster : _monsters)
-		monster->move(x_delta, 0, x_bound, y_bound);
+		monster->move(x_delta, y_delta, x_bound, y_bound);
 
-	return false;
+	if(_monsters.front()->getLocation().second >= y_bound){
+		// Level has ended.
+		return false;
+	}
+
+	return true;
 }
 
-bool MonsterLine::checkCollisionDeath(Entity* entity) {
+void MonsterLine::shoot(Bullet* bullet) {
+	// Generate a random index.
+	RandomGenerator* rand_gen = RandomGenerator::getInstance();
+	int rand_index = rand_gen->getRandomInt(0, _monsters.size()-1);
+
+	// Shoot the bullet.
+	bullet->setLocation(_monsters.at(rand_index)->getLocation().first, _monsters.at(rand_index)->getLocation().second);
+}
+
+bool MonsterLine::checkCollisionDeath(Entity* entity, bool& delete_other) {
 	for(auto &monster : _monsters){
-		if(monster->checkCollisionDeath(entity)){
+		if(monster->checkCollisionDeath(entity, delete_other)){
+			delete_other = true;
 			return deleteMonster(monster);
 		}
 	}
@@ -132,5 +146,20 @@ bool MonsterLine::checkCollisionDeath(Entity* entity) {
 void MonsterLine::notifyDraw(){
 	for(auto &monster : _monsters) {
 		monster->notifyDraw();
+	}
+
+	std::vector<ParticleGenerator*> p_gen_to_remove;
+	for(auto p_gen : _particle_generators) {
+		if(!p_gen->update(16)) 
+			p_gen_to_remove.push_back(p_gen);
+		p_gen->notifyDraw();
+	}
+
+	for(auto p_gen : p_gen_to_remove) {
+		std::vector<ParticleGenerator*>::iterator it = std::find(_particle_generators.begin(), _particle_generators.end(), p_gen);
+		if(it != _particle_generators.end()) {
+			_particle_generators.erase(it);		
+			delete p_gen;
+		}
 	}
 }

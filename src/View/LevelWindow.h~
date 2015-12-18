@@ -13,54 +13,65 @@
 #include <stdint.h>
 #include <map>
 
-class LevelWindow : public sf::RenderWindow{
-	/** 
-	 * All the textures used in this window/level.
-	 */
-	std::map<std::string, sf::Texture*> textures;
-	sf::Sprite background;
+namespace si {
 
-	public:
-
-		/**
-		 * Constructor inherited from sf::RenderWindow.
-		 * @param vm The video mode to use.
-		 * @param title The window title to use.
-		 * @param style The style of window to use.
-		 * @param settings The OpenGL settings to use for the window.
+	class LevelWindow : public sf::RenderWindow{
+		/** 
+		 * All the textures used in this window/level.
 		 */
-  		LevelWindow(sf::VideoMode mode, const std::string& title, sf::Uint32 style = sf::Style::Default, const sf::ContextSettings& settings = sf::ContextSettings());
+		std::map<std::string, sf::Texture> textures;
 
-
-		/**
-		 * Destructor
+		/** 
+		 * The sprite used for the background of the window.
 		 */
-		~LevelWindow();
+		sf::Sprite background;
 
-		/**
-		 * Runs the current level.
-		 * @param file_path The location of the texture file.
-		 * @param key Optional key name to look up the texture in the map.
- 		 * @return Wether The action succeeded.
-		 */
-		bool addTexture(std::string file_path, std::string key = "");
+		public:
+			/**
+			 * Constructor.
+			 */
+			LevelWindow();
 
-		/**
-		 * Sets the background of the level.
-		 * @param background_texture The texture to use as a background.
-		 */
-		void setBackground(sf::Texture* background_texture);
+			/**
+			 * Constructor inherited from sf::RenderWindow.
+			 * @param vm The video mode to use.
+			 * @param title The window title to use.
+			 * @param style The style of window to use.
+			 * @param settings The OpenGL settings to use for the window.
+			 */
+	  		LevelWindow(sf::VideoMode mode, const std::string& title, sf::Uint32 style = sf::Style::Default, const sf::ContextSettings& settings = sf::ContextSettings());
 
-		/**
-		 * Draws the background of the level.
-		 */
-		void drawBackground();
 
-		/**
-		 * Returns the textures used in this level/window.
- 		 * @return A map of textures with file_name as key.
-		 */
-		std::map<std::string, sf::Texture*> const& getTextures() const;
-};
+			/**
+			 * Destructor
+			 */
+			virtual ~LevelWindow();
 
+			/**
+			 * Runs the current level.
+			 * @param file_path The location of the texture file.
+			 * @param key Optional key name to look up the texture in the map.
+	 		 * @return Wether The action succeeded.
+			 */
+			bool addTexture(std::string file_path, std::string key = "");
+
+			/**
+			 * Sets the background of the level.
+			 * @param background_texture The texture to use as a background.
+			 */
+			void setBackground(sf::Texture& background_texture);
+
+			/**
+			 * Draws the background of the level.
+			 */
+			void drawBackground();
+
+			/**
+			 * Returns the textures used in this level/window.
+	 		 * @return A map of textures with file_name as key.
+			 */
+			std::map<std::string, sf::Texture>& getTextures();
+	};
+
+}
 #endif /* LEVELVIEW_H_ */

@@ -1,0 +1,12 @@
+Bullet:
+	XML:
+		Add seconds between shots
+		Add speed
+		Add collision radius
+
+MonsterLine:
+	XML:
+		X_buffer
+
+Level:
+	XML: Next Level

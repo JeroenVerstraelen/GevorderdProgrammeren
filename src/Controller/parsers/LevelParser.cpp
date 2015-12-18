@@ -1,35 +1,29 @@
-//============================================================================
-// Name        : LevelParser.cpp
-// Author      : Jeroen Verstraelen
-// Version     :
-// Description : Parser for Space Invaders XML documents.
-//============================================================================
-
 #include <SFML/Graphics.hpp>
 #include <stdlib.h>
 #include <vector>
 #include <utility>
 #include <stdexcept>
-#include <list>
 #include <iostream>
+
 #include "LevelParser.h"
 #include "../../Model/Level.h"
 #include "../../Model/Player.h"
+#include "../../Model/Shield.h"
 #include "../../Model/Monster.h"
-#include "../../Model/MonsterLine.h"
 #include "../../View/LevelWindow.h"
+#include "../../View/EntityObserver.h"
 
-using namespace std;
+using namespace si;
 
-bool LevelParser::loadFile(string filename) {
+bool LevelParser::loadFile(std::string filename) {
 	if(!doc.LoadFile(filename.c_str())){
-		cerr << "Failed to load file: Bad XML" << endl;
+		std::cerr << "Failed to load file: Bad XML" << std::endl;
 		return false;
 	}
 
 	root = doc.FirstChildElement();
 	if(root == NULL){
-		cerr << "Failed to load file: No root element." << endl;
+		std::cerr << "Failed to load file: No root element." << std::endl;
 		doc.Clear();
 		return false;
 	}
@@ -45,7 +39,7 @@ const char* LevelParser::readAttributeCString(TiXmlElement* elem, const char* ta
 	return Attribute;
 }
 
-string LevelParser::readAttributeString(TiXmlElement* elem, const char* tag) {
+std::string LevelParser::readAttributeString(TiXmlElement* elem, const char* tag) {
 	const char* Attribute = elem->Attribute(tag);
 	if(Attribute == NULL){
 		throw std::runtime_error("Failed to read attribute with tag '" + (std::string)tag  + "'.");
@@ -64,7 +58,7 @@ const char* LevelParser::readElementCString(TiXmlElement* elem, const char* tag)
 	return text->Value();
 }
 
-string LevelParser::readElementString(TiXmlElement* elem, const char* tag) {
+std::string LevelParser::readElementString(TiXmlElement* elem, const char* tag) {
 	TiXmlNode* node = elem->FirstChild();
 	TiXmlText* text = node->ToText();
 	if(text == NULL){
@@ -75,25 +69,24 @@ string LevelParser::readElementString(TiXmlElement* elem, const char* tag) {
 }
 
 
-bool LevelParser::parseLevel(std::string file_name, Level* level, LevelWindow* level_window) {
+bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* level_window) {
 	// Load the XML file.
 	if(!loadFile(file_name))
 		return false;
-	
+
 	// Parse starting with the root.
 	if(root != NULL){
 		TiXmlElement* current_element = root->FirstChildElement();
 		while(current_element != NULL) {
 			std::string element_name = current_element->Value();
-	
+
 			if(element_name == "WINDOW") {
 				// Change the window and level properties.
 				int x_size = atoi(readAttributeCString(current_element, "x_size"));
 				int y_size = atoi(readAttributeCString(current_element, "y_size"));
-				int y_offset = atoi(readAttributeCString(current_element, "y_offset"));
+				file_name = readAttributeString(current_element, "next_level");
 				level_window->setSize(sf::Vector2u(x_size, y_size));
 				level->setBounds(std::make_pair(x_size, y_size));
-				level->setYOffset(y_offset);
 
 				TiXmlElement* current_window_element = current_element->FirstChildElement();
 				while(current_window_element != NULL) {
@@ -119,18 +112,19 @@ bool LevelParser::parseLevel(std::string file_name, Level* level, LevelWindow* l
 					throw std::runtime_error("Invalid bullet texture.");
 					return false;
 				}
+			
 			}
 
 			else if(element_name == "PLAYER") {
 				// Create an observer for the player.
-				Observer* player_observer = new Observer(level_window);
+				Observer* player_observer = new EntityObserver(level_window);
 
 				// Player Location
-				double x = atoi(readAttributeCString(current_element, "x"));
-				double y = atoi(readAttributeCString(current_element, "y"));
-				double collision_radius = atoi(readAttributeCString(current_element, "collision_radius"));
-				double x_speed = atoi(readAttributeCString(current_element, "x_speed"));
-				double y_speed = atoi(readAttributeCString(current_element, "y_speed"));
+				double x = std::stod(readAttributeString(current_element, "x"));
+				double y = std::stod(readAttributeString(current_element, "y"));
+				double collision_radius = std::stod(readAttributeString(current_element, "collision_radius"));
+				double x_speed = std::stod(readAttributeString(current_element, "x_speed"));
+				double y_speed = std::stod(readAttributeString(current_element, "y_speed"));
 
 				// Player Texture
 				TiXmlElement* child_element = current_element->FirstChildElement();
@@ -140,23 +134,23 @@ bool LevelParser::parseLevel(std::string file_name, Level* level, LevelWindow* l
 				}
 				std::string child_element_name = child_element->Value();
 				if(child_element_name == "TEXTURE1") {
-					if(!level_window->addTexture(readElementString(child_element, "TEXTURE"))){
+					if(!level_window->addTexture(readElementString(child_element, "TEXTURE"), "player")){
 						throw std::runtime_error("Invalid player texture.");
 						return false;
 					}
 					try{
-						player_observer->setTexture(level_window->getTextures().at(readElementString(child_element, "TEXTURE")));
+						player_observer->addTexture(level_window->getTextures().at("player"));
 					}catch(std::out_of_range){
 						std::cerr << "Texture file not found. Terminating program." << std::endl;
 						std::terminate();
 					}
-					
+				
 				}		
 				else {
 					throw std::runtime_error("Player texture not found.");
 					return false;
 				}
-		
+	
 				// Add the player to the level.
 				std::vector<Observer*> player_observers = {player_observer};
 				Player* player = new Player(player_observers, x, y, collision_radius, x_speed, y_speed);
@@ -164,58 +158,124 @@ bool LevelParser::parseLevel(std::string file_name, Level* level, LevelWindow* l
 				level->setPlayer(player);
 			}
 
-			else if(element_name == "MONSTERLINE") {
-				std::list<Entity*> monsters;
-				double x_speed = atoi(readAttributeCString(current_element, "x_speed"));
-				double y_speed = atoi(readAttributeCString(current_element, "y_speed"));
+			else if(element_name == "MONSTERAI") {
+				double x_speed = std::stod(readAttributeString(current_element, "x_speed"));
+				double y_speed = std::stod(readAttributeString(current_element, "y_speed"));
+				double x_limit = std::stod(readAttributeString(current_element, "x_limit"));
+				double y_limit = std::stod(readAttributeString(current_element, "y_limit"));
 				std::string initial_direction_str = readAttributeString(current_element, "initial_direction");
-				Direction initial_direction = RIGHT;
-				if(initial_direction_str == "LEFT")
-					initial_direction = LEFT;
+				double moving_right = true;
+				if(initial_direction_str == "LEFT") 
+					moving_right = false;
+				level->setMonsterAI(x_speed, y_speed, x_limit, y_limit, moving_right);
+			}
 
-				TiXmlElement* current_monsterline_element = current_element->FirstChildElement();
-				while(current_monsterline_element != NULL) {
-					std::string cme_name = current_monsterline_element->Value();
-					if(cme_name == "MONSTER") {
-						// Create an observer for the monster.
-						Observer* monster_observer = new Observer(level_window);
+			else if(element_name == "MONSTER") {
+				// Create an observer for the monster.
+				Observer* monster_observer = new EntityObserver(level_window);
 
-						// Monster Location
-						double x = atoi(readAttributeCString(current_monsterline_element, "x"));
-						double y = atoi(readAttributeCString(current_monsterline_element, "y"));
-						double collision_radius = atoi(readAttributeCString(current_monsterline_element, "collision_radius"));
+				// Monster Location
+				double x = std::stod(readAttributeString(current_element, "x"));
+				double y = std::stod(readAttributeString(current_element, "y"));
+				double collision_radius = std::stod(readAttributeString(current_element, "collision_radius"));
 
-						// Monster Texture	
-						TiXmlElement* cme_child_element = current_monsterline_element->FirstChildElement();
-						if(cme_child_element == NULL) {
-							throw std::runtime_error("Invalid monster texture.");
-							return false;
+				// Monster Texture	
+				TiXmlElement* current_monster_element = current_element->FirstChildElement();
+				while(current_monster_element != NULL) {
+					std::string monster_element_name = current_monster_element->Value();
+					if(monster_element_name == "TEXTURE1"){
+						level_window->addTexture(readElementString(current_monster_element, "TEXTURE1"));
+						try{
+							monster_observer->addTexture(level_window->getTextures().at(readElementString(current_monster_element, "TEXTURE1")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
 						}
-						std::string cme_child_element_name = cme_child_element->Value();
-						if(cme_child_element_name == "TEXTURE1") {
-							level_window->addTexture(readElementString(cme_child_element, "TEXTURE"));
-							try{
-								monster_observer->setTexture(level_window->getTextures().at(readElementString(cme_child_element, "TEXTURE")));
-							}catch(std::out_of_range){
-								std::cerr << "Texture file not found. Terminating program." << std::endl;
-								std::terminate();
-							}
-						}		
-						else {
-							throw std::runtime_error("Monster texture was not found.");
-							return false;
-						}
-						
-						// Add the monster to list.
-						std::vector<Observer*> monster_observers = {monster_observer};
-						Monster* monster = new Monster(monster_observers, x, y, collision_radius, 0, 0);
-						monsters.push_back(monster);
 					}
-					current_monsterline_element = current_monsterline_element->NextSiblingElement();
+					if(monster_element_name == "TEXTURE2"){
+						level_window->addTexture(readElementString(current_monster_element, "TEXTURE2"));
+						try{
+							monster_observer->addTexture(level_window->getTextures().at(readElementString(current_monster_element, "TEXTURE2")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
+						}
+					}
+
+					current_monster_element = current_monster_element->NextSiblingElement();
 				}
-				// Add the monster line to the level.
-				MonsterLine* monster_line = new MonsterLine(initial_direction, x_speed, y_speed, level->getBounds().first, monsters);
-				level->addEntity(monster_line);
+			
+				// Add the monster to the level.
+				std::vector<Observer*> monster_observers = {monster_observer};
+				Monster* monster = new Monster(monster_observers, x, y, collision_radius, 0, 0);
+				level->addEntity(monster);
+			}
+
+			else if(element_name == "SHIELD") {
+				Observer* shield_observer = new EntityObserver(level_window);
+
+				// Shield Location
+				double x = std::stod(readAttributeString(current_element, "x"));
+				double y = std::stod(readAttributeString(current_element, "y"));
+				double collision_radius = std::stod(readAttributeString(current_element, "collision_radius"));
+
+				// Shield Texture.
+				TiXmlElement* current_shield_element = current_element->FirstChildElement();
+				while(current_shield_element != NULL) {
+					std::string shield_element_name = current_shield_element->Value();
+					if(shield_element_name == "TEXTURE1"){
+						level_window->addTexture(readElementString(current_shield_element, "TEXTURE1"));
+						try{
+							shield_observer->addTexture(level_window->getTextures().at(readElementString(current_shield_element, "TEXTURE1")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
+						}
+					}
+					if(shield_element_name == "TEXTURE2"){
+						level_window->addTexture(readElementString(current_shield_element, "TEXTURE2"));
+						try{
+							shield_observer->addTexture(level_window->getTextures().at(readElementString(current_shield_element, "TEXTURE2")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
+						}
+					}
+					if(shield_element_name == "TEXTURE3"){
+						level_window->addTexture(readElementString(current_shield_element, "TEXTURE3"));
+						try{
+							shield_observer->addTexture(level_window->getTextures().at(readElementString(current_shield_element, "TEXTURE3")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
+						}
+					}
+					if(shield_element_name == "TEXTURE4"){
+						level_window->addTexture(readElementString(current_shield_element, "TEXTURE4"));
+						try{
+							shield_observer->addTexture(level_window->getTextures().at(readElementString(current_shield_element, "TEXTURE4")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
+						}
+					}
+					if(shield_element_name == "TEXTURE5"){
+						level_window->addTexture(readElementString(current_shield_element, "TEXTURE5"));
+						try{
+							shield_observer->addTexture(level_window->getTextures().at(readElementString(current_shield_element, "TEXTURE5")));
+						}catch(std::out_of_range){
+							std::cerr << "Texture file not found. Terminating program." << std::endl;
+							std::terminate();
+						}
+					}
+
+					current_shield_element = current_shield_element->NextSiblingElement();
+				}
+			
+				// Add the shield to the level.
+				std::vector<Observer*> shield_observers = {shield_observer};
+				Shield* shield = new Shield(shield_observers, x, y, collision_radius, 0, 0);
+				level->addEntity(shield);				
 			}
 
 			current_element = current_element->NextSiblingElement();

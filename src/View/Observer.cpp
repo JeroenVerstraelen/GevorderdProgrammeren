@@ -1,26 +1,9 @@
-#include <SFML/Graphics.hpp>
-#include <utility>
-#include "LevelWindow.h"
 #include "Observer.h"
 
-Observer::Observer(LevelWindow* lw) : level_window(lw){}
+namespace si {
 
-void Observer::setTexture(sf::Texture* texture){
-	sprite.setTexture(*texture);
+	Observer::Observer(LevelWindow* lw) : level_window(lw){}
+
+	Observer::~Observer(){}
+
 }
-
-void Observer::notify(Entity* entity, Notification n){
-	switch(n){
-		case MOVE: 
-		{
-			std::pair<double, double> l = entity->getLocation();
-			sprite.setPosition(sf::Vector2f(l.first, l.second));
-			break;
-		}
-	    	case DRAW: 
-		{	
-			level_window->draw(sprite);
-			break;
-		}
-	}
-}	

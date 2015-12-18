@@ -5,10 +5,13 @@
 // Description : Represents a line of monsters as an entity.
 //============================================================================
 
+#ifndef MONSTERLINE_H_
+#define MONSTERLINE_H_
+
 #include <vector>
 #include "Entity.h"
-#include <list>
-enum Direction { LEFT, RIGHT };
+#include "Bullet.h"
+#include "ParticleGenerator.h"
 
 class MonsterLine : public Entity{
 	private:
@@ -19,24 +22,24 @@ class MonsterLine : public Entity{
 		double _line_size = 0;
 
 		/**
-		 * This x value only goes up.
+		 * X-bound buffer.
 		 */
-		double _total_x = 0;
+		double _x_buffer = 50;
 
 		/**
 		 * The entities in the monster line.
 		 */
-		std::list<Entity*> _monsters;
+		std::vector<Entity*> _monsters;
 
 		/**
-		 * The initial direction.
+		 * The direction the line is moving in.
 		 */
 		Direction _direction = RIGHT;
 
 		/**
-		 * Recalculates the size of the MonsterLine.
+		 * Particle generators used by the monster line.
 		 */
-		void recalculateLineSize();
+		std::vector<ParticleGenerator*> _particle_generators;
 
 	public:
 
@@ -48,7 +51,7 @@ class MonsterLine : public Entity{
 		 * @param x_bound The bound on the x_axis.
 		 * @param monsters The monsters that are in the monster line.
 		 */
-		MonsterLine(Direction direction, double x_speed, double y_speed, double x_bound, std::list<Entity*> monsters);
+		MonsterLine(Direction direction, double x_speed, double y_speed, double x_bound, double x_buffer, std::vector<Entity*> monsters);
 
 		/**
 		 * Destructor
@@ -79,19 +82,26 @@ class MonsterLine : public Entity{
 		 * @param elapsed_time The amount of time used for the previous game tick.
 		 * @param x_bound The maximum x_value.
 		 * @param y_bound The maximum y_value.
-		 * @return Whether the line has reached the maximum y-value.
+		 * @return Whether the line has not yet reached the maximum y-value.
 		 */
-		virtual bool move(double elapsed_time, double x_bound, double y_bound);
+		virtual bool move(double elapsed_time, double x_bound, double y_bound, Direction direction = RIGHT);
+
+		/** 
+		 * Shoots a bullet from a random monster in the line.
+		 */
+		void shoot(Bullet* bullet);
 
 		/** 
 		 * Checks if the entity should be removed after a collission.
 		 * @param entity The entity to check for.
 		 * @return Whether the entity should be deleted.
 		 */
-		virtual bool checkCollisionDeath(Entity* entity);
+		virtual bool checkCollisionDeath(Entity* entity, bool& delete_other);
 
 		/** 
 		 * Notify the observers that the Entity needs to be drawn.
 		 */
 		virtual void notifyDraw();
 };
+
+#endif /* MONSTERLINE_H_ */

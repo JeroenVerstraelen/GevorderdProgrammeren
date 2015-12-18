@@ -6,7 +6,7 @@ SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/
 FIND_PACKAGE(SFML 2.1 COMPONENTS system window graphics)
 
 # The source files to compile
-SET(SRC main.cpp Controller/LevelController Controller/parsers/LevelParser Controller/parsers/tinyxml/tinyxml Controller/parsers/tinyxml/tinystr Controller/parsers/tinyxml/tinyxmlerror Controller/parsers/tinyxml/tinyxmlparser Model/Entity Model/Bullet Model/Level Model/Monster Model/MonsterLine Model/Player View/LevelWindow View/Observer Utils/StopWatch Utils/RandomGenerator)
+SET(SRC main.cpp Controller/LevelController Controller/MenuController Controller/parsers/LevelParser Controller/parsers/tinyxml/tinyxml Controller/parsers/tinyxml/tinystr Controller/parsers/tinyxml/tinyxmlerror Controller/parsers/tinyxml/tinyxmlparser Model/Entity Model/Shield Model/Bullet Model/Level Model/Monster Model/Player Model/ParticleGenerator Model/Button View/LevelWindow View/Observer View/EntityObserver View/ParticleObserver Utils/StopWatch Utils/RandomGenerator)
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
