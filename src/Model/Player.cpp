@@ -39,7 +39,7 @@ namespace si {
 						if(entity->getType() == "Bullet") {
 							Bullet* bullet = static_cast<Bullet*>(entity);
 							if(bullet->getSenderType() == "monster")
-								return false;
+								return true;
 						}
 					}
 				}

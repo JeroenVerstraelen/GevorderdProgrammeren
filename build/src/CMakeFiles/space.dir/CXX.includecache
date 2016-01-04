@@ -6,155 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/LevelController.cpp
-SFML/Graphics.hpp
--
-vector
--
-utility
--
-stdexcept
--
-iostream
--
-LevelController.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/LevelController.h
-parsers/LevelParser.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/LevelParser.h
-../View/LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
-../View/EntityObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.h
-../Model/Level.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-../Model/Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-../Model/Player.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.h
-../Model/Bullet.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Bullet.h
-../Model/Monster.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Monster.h
-../Utils/StopWatch.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.h
-../Utils/RandomGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/RandomGenerator.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/LevelController.h
-SFML/Graphics.hpp
--
-../Model/Level.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-../View/LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
-../Utils/StopWatch.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.cpp
-iostream
--
-MenuController.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.h
-../Model/Bullet.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Bullet.h
-../View/EntityObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.h
-SFML/Graphics.hpp
--
-vector
--
-parsers/LevelParser.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/LevelParser.h
-../View/LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
-../Model/Button.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Button.h
-../Model/Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-../Model/Level.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-../Utils/StopWatch.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/LevelParser.cpp
-SFML/Graphics.hpp
--
-stdlib.h
--
-vector
--
-utility
--
-stdexcept
--
-iostream
--
-LevelParser.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/LevelParser.h
-../../Model/Level.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-../../Model/Player.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.h
-../../Model/Shield.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Shield.h
-../../Model/Monster.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Monster.h
-../../View/LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
-../../View/EntityObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/LevelParser.h
-string
--
-tinyxml/tinyxml.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinyxml.h
-../../Model/Level.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-../../View/LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinystr.h
-assert.h
--
-string.h
--
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinyxml.h
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-assert.h
--
-string
--
-iostream
--
-sstream
--
-tinystr.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/parsers/tinyxml/tinystr.h
-
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Bullet.h
 Entity.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Button.h
-vector
--
-utility
--
-Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-../View/Observer.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
 
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
 vector
@@ -164,72 +18,12 @@ utility
 ../View/Observer.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
 
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.cpp
-SFML/Graphics.hpp
--
-vector
--
-algorithm
--
-map
--
-utility
--
-limits
--
-algorithm
--
-Level.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
+/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.cpp
 Player.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.h
-../Utils/StopWatch.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.h
-../Utils/RandomGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/RandomGenerator.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Level.h
-vector
--
-utility
--
-Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-Player.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.h
-ParticleGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.h
-../Utils/StopWatch.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Monster.h
-Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
 Bullet.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Bullet.h
 
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.cpp
-ParticleGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.h
-../View/ParticleObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.h
-../Utils/RandomGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/RandomGenerator.h
-utility
--
-algorithm
--
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.h
-tuple
--
-Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-../View/Observer.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
-
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Player.h
 vector
 -
@@ -238,40 +32,6 @@ utility
 Entity.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
 ../View/Observer.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Shield.h
-Entity.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/RandomGenerator.h
-random
--
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Utils/StopWatch.h
-chrono
--
-ctime
--
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.cpp
-SFML/Graphics.hpp
--
-utility
--
-EntityObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.h
-ParticleObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.h
-Observer.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/EntityObserver.h
-SFML/Graphics.hpp
--
-LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
-Observer.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
 
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
@@ -291,30 +51,4 @@ LevelWindow.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
 ../Model/Entity.h
 /home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/Entity.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.cpp
-ParticleObserver.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.h
-tuple
--
-../Model/ParticleGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/ParticleObserver.h
-Observer.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/Observer.h
-../Model/ParticleGenerator.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Model/ParticleGenerator.h
-
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/main.cpp
-SFML/Graphics.hpp
--
-iostream
--
-Controller/LevelController.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/LevelController.h
-Controller/MenuController.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/Controller/MenuController.h
-View/LevelWindow.h
-/home/jeroen/Desktop/Lessen/Gevorderd Programmeren/JaarOpdracht/src/View/LevelWindow.h
 

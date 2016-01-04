@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LEVEL>
-    <WINDOW x_size="1200" y_size="800" next_level="level2">
+    <WINDOW x_size="1200" y_size="800" next_level="level4">
         <NAME>
-	    Level 1
+	    Level 3
         </NAME>
         <TEXTURE1>
 	    Resources/Textures/space_background.jpg
@@ -183,24 +183,23 @@
 	    Resources/Textures/monsterTexture2.png
 	</TEXTURE2>
     </MONSTER>
-    <SHIELD x="300" y="600" collision_radius="64">
+    <MONSTER x="150" y="400" collision_radius="32">
 	<TEXTURE1>
-	    Resources/Textures/shield.png
+	    Resources/Textures/monsterTexture1.png
 	</TEXTURE1>
 	<TEXTURE2>
-	    Resources/Textures/shield1.png
+	    Resources/Textures/monsterTexture2.png
 	</TEXTURE2>
-	<TEXTURE3>
-	    Resources/Textures/shield2.png
-	</TEXTURE3>
-	<TEXTURE4>
-	    Resources/Textures/shield3.png
-	</TEXTURE4>
-	<TEXTURE5>
-	    Resources/Textures/shield4.png
-	</TEXTURE5>
-    </SHIELD>	
-    <SHIELD x="600" y="600" collision_radius="64">
+    </MONSTER>
+    <MONSTER x="1050" y="400" collision_radius="32">
+	<TEXTURE1>
+	    Resources/Textures/monsterTexture1.png
+	</TEXTURE1>
+	<TEXTURE2>
+	    Resources/Textures/monsterTexture2.png
+	</TEXTURE2>
+    </MONSTER>
+    <SHIELD x="200" y="600" collision_radius="64">
 	<TEXTURE1>
 	    Resources/Textures/shield.png
 	</TEXTURE1>
@@ -217,7 +216,7 @@
 	    Resources/Textures/shield4.png
 	</TEXTURE5>
     </SHIELD>
-    <SHIELD x="900" y="600" collision_radius="64">
+    <SHIELD x="1000" y="600" collision_radius="64">
 	<TEXTURE1>
 	    Resources/Textures/shield.png
 	</TEXTURE1>

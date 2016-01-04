@@ -99,7 +99,7 @@ namespace si {
 
 				// other events
 				default:
-			    		break;
+			    		break;se
 			}
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
