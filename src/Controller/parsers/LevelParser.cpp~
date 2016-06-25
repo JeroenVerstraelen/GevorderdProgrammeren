@@ -14,6 +14,7 @@
 #include "../../View/EntityObserver.h"
 
 using namespace si;
+using namespace si::controller;
 
 bool LevelParser::loadFile(std::string filename) {
 	if(!doc.LoadFile(filename.c_str())){
@@ -69,7 +70,7 @@ std::string LevelParser::readElementString(TiXmlElement* elem, const char* tag) 
 }
 
 
-bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* level_window) {
+bool LevelParser::parseLevel(std::string& file_name, model::Level* level, view::LevelWindow* level_window) {
 	// Load the XML file.
 	if(!loadFile(file_name))
 		return false;
@@ -117,7 +118,7 @@ bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* 
 
 			else if(element_name == "PLAYER") {
 				// Create an observer for the player.
-				Observer* player_observer = new EntityObserver(level_window);
+				view::Observer* player_observer = new view::EntityObserver(level_window);
 
 				// Player Location
 				double x = std::stod(readAttributeString(current_element, "x"));
@@ -152,8 +153,8 @@ bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* 
 				}
 	
 				// Add the player to the level.
-				std::vector<Observer*> player_observers = {player_observer};
-				Player* player = new Player(player_observers, x, y, collision_radius, x_speed, y_speed);
+				std::vector<view::Observer*> player_observers = {player_observer};
+				model::Player* player = new model::Player(player_observers, x, y, collision_radius, x_speed, y_speed);
 				level->addEntity(player);
 				level->setPlayer(player);
 			}
@@ -172,7 +173,7 @@ bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* 
 
 			else if(element_name == "MONSTER") {
 				// Create an observer for the monster.
-				Observer* monster_observer = new EntityObserver(level_window);
+				view::Observer* monster_observer = new view::EntityObserver(level_window);
 
 				// Monster Location
 				double x = std::stod(readAttributeString(current_element, "x"));
@@ -206,13 +207,13 @@ bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* 
 				}
 			
 				// Add the monster to the level.
-				std::vector<Observer*> monster_observers = {monster_observer};
-				Monster* monster = new Monster(monster_observers, x, y, collision_radius, 0, 0);
+				std::vector<view::Observer*> monster_observers = {monster_observer};
+				model::Monster* monster = new model::Monster(monster_observers, x, y, collision_radius, 0, 0);
 				level->addEntity(monster);
 			}
 
 			else if(element_name == "SHIELD") {
-				Observer* shield_observer = new EntityObserver(level_window);
+				view::Observer* shield_observer = new view::EntityObserver(level_window);
 
 				// Shield Location
 				double x = std::stod(readAttributeString(current_element, "x"));
@@ -273,8 +274,8 @@ bool LevelParser::parseLevel(std::string& file_name, Level* level, LevelWindow* 
 				}
 			
 				// Add the shield to the level.
-				std::vector<Observer*> shield_observers = {shield_observer};
-				Shield* shield = new Shield(shield_observers, x, y, collision_radius, 0, 0);
+				std::vector<view::Observer*> shield_observers = {shield_observer};
+				model::Shield* shield = new model::Shield(shield_observers, x, y, collision_radius, 0, 0);
 				level->addEntity(shield);				
 			}
 

@@ -18,54 +18,56 @@
 #include "../Utils/StopWatch.h"
 
 namespace si {
+namespace controller {
 
-	class MenuController {
-		private:
-			/** 
-			 * The window used for the menu.
-			 */
-			LevelWindow* _window = NULL;
+class MenuController {
+	private:
+		/** 
+		 * The window used for the menu.
+		 */
+		view::LevelWindow* _window = NULL;
 
-			/**
-			 * A list of the buttons used in the menu.
-			 */
-			std::vector<Entity*> menu_entities;
+		/**
+		 * A list of the buttons used in the menu.
+		 */
+		std::vector<model::Entity*> menu_entities;
 
-			/** 
-			 * The level sim being handled.
-			 */
-			Level* level = NULL;
+		/** 
+		 * The level sim being handled.
+		 */
+		model::Level* level = NULL;
 
-			/** 
-			 * Loads the simulation.
-			 */
-			bool loadSim();
+		/** 
+		 * Loads the simulation.
+		 */
+		bool loadSim();
 
-			/**
-			 * Performs a single tick on the menu.
-			 * @param stop_watch The stop watch used to time the ticks.
-			 * @return Whether the next game should start. 
-			 */
-			bool tick(StopWatch* stop_watch);
+		/**
+		 * Performs a single tick on the menu.
+		 * @param stop_watch The stop watch used to time the ticks.
+		 * @return Whether the next game should start. 
+		 */
+		bool tick(StopWatch* stop_watch);
 
-		public:
-			/**
-			 * Constructor.
-			 */
-			MenuController(LevelWindow* lw);
+	public:
+		/**
+		 * Constructor.
+		 */
+		MenuController(view::LevelWindow* lw);
 
-			/**
-			 * Default Destructor.
-			 */
-			~MenuController();
+		/**
+		 * Default Destructor.
+		 */
+		~MenuController();
 
-			/* 
-			 * Starts the menu.
-			 * @return Whether the next game should start. 
-			 */
-			bool start();
-	};
+		/* 
+		 * Starts the menu.
+		 * @return Whether the next game should start. 
+		 */
+		bool start();
+};
 
-}
+} // Namespace controller
+} // Namespace si
 
 #endif /* MENUCONTROLLER_H_ */
